@@ -1,0 +1,20 @@
+{
+  "name": "@pitch-dog/heres-the-thing-web",
+  "version": "0.4.0",
+  "private": true,
+  "description": "The public website for Here’s The Thing.",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/build-sites-worker.mjs",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/journey.test.ts",
+    "test:hosting": "node --test tests/hosting.test.mjs",
+    "verify": "npm run check && npm run test && npm run build && npm run test:hosting"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^7.0.0"
+  }
+}

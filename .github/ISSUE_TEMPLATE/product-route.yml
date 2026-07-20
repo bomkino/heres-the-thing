@@ -1,0 +1,42 @@
+name: Product route
+description: A real situation reaches the wrong advice or is missing.
+title: "Route: "
+labels: [product]
+body:
+  - type: textarea
+    id: person
+    attributes:
+      label: Who is trying to do what?
+      description: Name the role, project type, actual recipient, and decision. Keep the project anonymous.
+    validations:
+      required: true
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options:
+        - Slide Check
+        - Deck Bones
+        - Next Move
+        - Pitch Dictionary
+        - Handoff between tools
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What does the tool say now?
+    validations:
+      required: true
+  - type: textarea
+    id: better
+    attributes:
+      label: What fact should change the answer?
+      description: Explain the material reason, not only the preferred output.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Evidence or practice
+      description: Current requirement, observed workflow, professional experience, or a primary source.

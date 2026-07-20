@@ -1,0 +1,55 @@
+name: Bug report
+description: Something visible, functional, or accessible is broken.
+title: "Bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Remove private pitch material from screenshots and pasted text.
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options:
+        - Home / navigation
+        - Slide Check
+        - Deck Bones
+        - Next Move
+        - Pitch Dictionary
+        - My plan / handoff
+        - Build or documentation
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: Tell us what you did, what appeared, and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: route
+    attributes:
+      label: Route
+      placeholder: /deck
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, device, and operating system
+      placeholder: Safari 20, iPhone 15, iOS 20
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Screenshot, console error, or minimal reproduction. Remove private material.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked for an existing issue.
+          required: true
+        - label: This report contains no confidential pitch material.
+          required: true

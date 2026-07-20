@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.DS_Store
+Icon
+Icon?
+.env
+.env.*
+!.env.example
+.wrangler/
+.vite/
+*.log
+coverage/

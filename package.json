@@ -1,0 +1,26 @@
+{
+  "name": "heres-the-thing",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Four focused, local-first pitch tools from pitch.dog.",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "workspaces": [
+    "website"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace website",
+    "build": "npm run build --workspace website",
+    "check": "tsc --noEmit && npm run check --workspace website",
+    "test": "node --test tests/*.test.ts && npm run test --workspace website",
+    "test:hosting": "npm run test:hosting --workspace website",
+    "verify:release": "node scripts/verify-release.mjs",
+    "verify": "npm run check && npm run test && npm run build && npm run test:hosting && npm run verify:release"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

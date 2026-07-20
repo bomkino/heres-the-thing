@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/bomkino/heres-the-thing/security/advisories/new
+    about: Report vulnerabilities privately.
+  - name: Commercial pitch.dog work
+    url: https://pitch.dog/
+    about: Deck, pitch, and studio enquiries belong here rather than in the issue tracker.
