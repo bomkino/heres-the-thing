@@ -133,7 +133,7 @@ const hosting = JSON.parse(readFileSync(resolve(root, "website/.openai/hosting.j
 assert(/^appgprj_[a-f0-9]+$/u.test(hosting.project_id ?? ""), "Sites project ID is present");
 
 const readme = readFileSync(resolve(root, "README.md"), "utf8");
-const liveLink = readme.match(/<a href="(https:\/\/[^\"]+)"><strong>Try it live ↗<\/strong><\/a>/u)?.[1];
+const liveLink = readme.match(/<a href="(https:\/\/[^"]+)"><strong>Try it live ↗<\/strong><\/a>/u)?.[1];
 assert(Boolean(liveLink && !liveLink.includes("github.com")), "README points to the real live site");
 
 for (const message of passes) process.stdout.write(`PASS  ${message}\n`);

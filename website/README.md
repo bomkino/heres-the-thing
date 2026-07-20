@@ -2,6 +2,8 @@
 
 The production website for Here’s The Thing. It is a static TypeScript application wrapped in a very small Cloudflare Worker for deep links on Sites.
 
+Public deployment: <https://heres-the-thing.dog-pitch.chatgpt.site>
+
 ## Commands
 
 ```bash

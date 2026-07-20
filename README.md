@@ -7,7 +7,7 @@
 <p align="center"><strong>Four focused pitch tools. Each does one useful thing and then gets out of the way.</strong></p>
 
 <p align="center">
-  <a href="#start-locally"><strong>Run it locally ↗</strong></a>
+  <a href="https://heres-the-thing.dog-pitch.chatgpt.site"><strong>Try it live ↗</strong></a>
   &nbsp;·&nbsp;
   <a href="docs/PRODUCT.md">Meet the tools</a>
   &nbsp;·&nbsp;
